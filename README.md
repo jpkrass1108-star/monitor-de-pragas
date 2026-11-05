@@ -36,15 +36,18 @@ As funcionalidades abaixo estão documentadas no briefing técnico do sistema. A
 | Monitoramento de eventos | Consulta eventos de movimento de sensores e câmeras integrados à plataforma Tuya. |
 | Notificações | Exibe avisos no painel e oferece notificações Web Push em segundo plano, conforme compatibilidade e configuração. |
 | Vídeo ao vivo | Permite visualizar a câmera de uma armadilha pelo aplicativo. |
+| Registro de presença via NFC | Tag na armadilha com sensor permite ao técnico registrar sua presença no ponto de monitoramento. |
 | Controle de manutenção | Registra trocas de refil e lâmpada e sinaliza prazos de manutenção. |
 | Pendências e roteiro de visitas | Reúne ocorrências e manutenções pendentes para apoiar a priorização das visitas. |
 | Históricos e acompanhamento | Organiza eventos, notificações e informações de visita por empresa e dispositivo. |
 | Catálogo de produtos | Apresenta famílias de produtos, especificações e intervalos de manutenção. |
 | Instalação como aplicativo | Permite acesso pela tela inicial do celular, como PWA. |
 
-### Registro de manutenção em campo
+### Registro de presença e manutenção com NFC
 
-O projeto também contempla um módulo NFC para facilitar a confirmação de trocas pelo técnico em campo. O briefing documenta sua evolução para vincular os registros à empresa e ao dispositivo corretos, além da necessidade de sincronizar esses registros com o painel principal.
+Utilizamos uma **tag NFC na armadilha equipada com sensor** para que o técnico de monitoramento de pragas pudesse **registrar sua presença no local**. Ao aproximar o celular da tag, o técnico acessa o fluxo de registro associado ao ponto de monitoramento, vinculando a visita à armadilha atendida.
+
+O módulo também contempla o registro de trocas e manutenções em campo. Dessa forma, o projeto conecta o acompanhamento remoto dos dispositivos ao registro das visitas presenciais e das intervenções realizadas. O briefing documenta a evolução da vinculação entre empresa, dispositivo e registros, além da necessidade de sincronização com o painel principal.
 
 ## Tecnologias utilizadas
 
@@ -54,6 +57,7 @@ O projeto também contempla um módulo NFC para facilitar a confirmação de tro
 | Aplicativo web | PWA, manifesto e Service Worker |
 | Back-end | PHP 8 e integração com APIs via cURL |
 | Integração IoT | Tuya OpenAPI |
+| Registro em campo | Tags NFC nas armadilhas |
 | Notificações | Python, Web Push e VAPID |
 | Vídeo | HLS |
 | Persistência | localStorage e arquivos JSON |
