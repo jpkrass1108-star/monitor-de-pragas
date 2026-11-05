@@ -18,6 +18,12 @@ O Monitor de Pragas reúne essas informações em uma interface acessível pelo 
 
 Desenvolvimento do web app, reunindo interface, integração com dispositivos IoT e recursos de acompanhamento operacional. O trabalho conecta programação e compreensão de processos de negócio para transformar dados de sensores e registros de manutenção em informações úteis à operação.
 
+## Projeto 3D e integração dos dispositivos
+
+Além do desenvolvimento do aplicativo, nossa equipe criou o **projeto 3D da câmera e do sensor** e adaptou esses dispositivos à **tecnologia Tuya** para atender à proposta de monitoramento de pragas. Esse trabalho reuniu o projeto físico dos equipamentos e sua integração ao ecossistema IoT utilizado pelo sistema.
+
+O projeto 3D e a adaptação dos dispositivos foram uma construção da equipe, complementando minha atuação no desenvolvimento do web app. A solução conecta, assim, os equipamentos físicos, a plataforma Tuya e a interface de acompanhamento operacional.
+
 ## Funcionalidades
 
 As funcionalidades abaixo estão documentadas no briefing técnico do sistema. A disponibilidade dos recursos conectados depende dos dispositivos, das permissões da plataforma IoT e dos serviços em execução.
